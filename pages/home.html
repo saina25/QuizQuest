@@ -1,0 +1,134 @@
+<div class="main-container">
+  <div class="page-header">
+    <h1>Welcome to QuizQuest!</h1>
+  </div>
+  <div class="content-body">
+    <section id="about" class="home-section">
+      <h2>About Us</h2>
+      <p>
+        QuizQuest is a fun and interactive platform designed to challenge your
+        knowledge across various domains. Our new interactive prompts let you choose the perfect quiz for your mood or study goals every time you play!
+      </p>
+    </section>
+
+    <section id="testimonials" class="home-section">
+      <h2>What Our Users Say</h2>
+      <div class="row g-3">
+        <div class="col-md-6 h-100">
+          <div class="testimonial-card">
+            <p>
+              "This is the best quiz site I've ever used! The questions are
+              challenging, and the timer really adds to the thrill."
+            </p>
+            <footer>
+              <div class="stars">★★★★★</div>
+              - Alex Johnson
+            </footer>
+          </div>
+        </div>
+        <div class="col-md-6 h-100">
+          <div class="testimonial-card">
+            <p>
+              "A fantastic way to test my knowledge. I love the variety of
+              categories and the sleek dark mode. Highly recommended for a fun
+              brain workout!"
+            </p>
+            <footer>
+              <div class="stars">★★★★★</div>
+              - Maria Garcia
+            </footer>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="welcome-back-section" class="home-section text-center hidden">
+        <h2>Welcome Back, <span id="welcome-user-name"></span>!</h2>
+        <p>Ready for your next challenge?</p>
+        <button class="btn btn-primary btn-lg mt-2" id="welcome-start-quiz-btn">Take a New Quiz</button>
+    </section>
+
+    <section id="auth-section" class="home-section">
+      <div id="auth-container" class="form-container">
+        <div id="signup-success" class="alert alert-success hidden" role="alert">
+          Registration successful! Please log in to continue.
+        </div>
+        <div id="login-form">
+          <h2 class="text-center">Welcome Back!</h2>
+          <form novalidate>
+             <div id="login-error" class="alert alert-danger hidden" role="alert"></div>
+            <div class="mb-3">
+              <label for="login-email" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="login-email" required />
+            </div>
+            <div class="mb-3">
+              <label for="login-password" class="form-label">Password</label>
+              <input type="password" class="form-control" id="login-password" required />
+            </div>
+            <button type="submit" class="btn btn-primary w-100">
+              Login & Start Quiz
+            </button>
+          </form>
+          <p class="text-center mt-3">
+            Don't have an account?
+            <a href="#" id="auth-switch-to-signup">Sign Up</a>
+          </p>
+        </div>
+        <div id="signup-form" class="hidden">
+          <h2 class="text-center">Create Your Account</h2>
+          <form novalidate>
+            <div id="signup-error" class="alert alert-danger hidden" role="alert"></div>
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label for="signup-firstname" class="form-label">First Name</label>
+                    <input type="text" class="form-control" id="signup-firstname" required />
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="signup-lastname" class="form-label">Last Name</label>
+                    <input type="text" class="form-control" id="signup-lastname" required />
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="signup-email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="signup-email" required />
+            </div>
+             <div class="mb-3">
+                <label for="signup-phone" class="form-label">Phone Number</label>
+                <input type="tel" class="form-control" id="signup-phone" required />
+            </div>
+            <div class="mb-3">
+                <label for="signup-password" class="form-label">Password</label>
+                <input type="password" class="form-control" id="signup-password" required />
+            </div>
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label for="signup-age" class="form-label">Age</label>
+                    <input type="number" class="form-control" id="signup-age" required min="10" max="100"/>
+                </div>
+                 <div class="col-md-6 mb-3">
+                    <label for="signup-gender" class="form-label">Gender</label>
+                    <select class="form-select" id="signup-gender" required>
+                        <option value="" selected disabled>Select...</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="signup-state" class="form-label">State of Residence</label>
+                <input type="text" class="form-control" id="signup-state" required />
+            </div>
+            <button type="submit" class="btn btn-primary w-100">
+              Sign Up
+            </button>
+          </form>
+          <p class="text-center mt-3">
+            Already have an account?
+            <a href="#" id="auth-switch-to-login">Login</a>
+          </p>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>

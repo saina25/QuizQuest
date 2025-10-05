@@ -1,0 +1,45 @@
+<div class="main-container protected-page">
+  <div class="page-header">
+    <h1>My Profile</h1>
+  </div>
+  <div class="content-body">
+    <div class="form-container" id="profile-form-container">
+        <h3 class="profile-section-header">Personal Information</h3>
+        <div class="mb-3">
+            <label class="form-label">Full Name</label>
+            <p id="profile-name" class="profile-info-text"></p>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Email</label>
+            <p id="profile-email" class="profile-info-text"></p>
+        </div>
+         <div class="mb-3">
+            <label class="form-label">Phone</label>
+            <p id="profile-phone" class="profile-info-text"></p>
+        </div>
+        <div class="row mb-3">
+            <div class="col-6">
+                <label class="form-label">Age</label>
+                <input type="number" class="form-control" id="profile-age" disabled />
+            </div>
+            <div class="col-6">
+                <label class="form-label">Gender</label>
+                <p id="profile-gender" class="profile-info-text"></p>
+            </div>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">State of Residence</label>
+            <p id="profile-state" class="profile-info-text"></p>
+        </div>
+        
+        <div class="mt-4 text-end" id="profile-actions">
+            <button id="edit-profile-btn" class="btn btn-secondary">Edit Profile</button>
+            <button id="save-profile-btn" class="btn btn-primary hidden">Save Changes</button>
+            <button id="cancel-edit-btn" class="btn btn-light hidden">Cancel</button>
+        </div>
+         <div id="profile-success-alert" class="alert alert-success mt-3 hidden" role="alert">
+            Profile updated successfully!
+        </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,67 @@
+<div class="main-container protected-page">
+  <div class="page-header">
+    <h1 id="quiz-title">Choose Your Challenge</h1>
+  </div>
+  <div class="content-body">
+    
+    <div id="quiz-setup">
+        <div id="prompt-status" class="text-center">
+            <h2>First, who are you today?</h2>
+            <div class="d-grid gap-3 col-md-8 mx-auto mt-4">
+                <button class="btn btn-lg btn-outline-primary setup-btn" data-choice="student">Student</button>
+                <button class="btn btn-lg btn-outline-success setup-btn" data-choice="aspirant">Aspirant</button>
+                <button class="btn btn-lg btn-outline-info setup-btn" data-choice="professional">Working Professional</button>
+            </div>
+        </div>
+
+        <div id="prompt-aspirant" class="text-center hidden">
+            <h2>Which exam are you preparing for?</h2>
+            <div class="d-grid gap-3 col-md-8 mx-auto mt-4">
+                <button class="btn btn-lg btn-primary category-btn" data-category="jee">JEE (Engineering)</button>
+                <button class="btn btn-lg btn-success category-btn" data-category="neet">NEET (Medical)</button>
+            </div>
+        </div>
+
+        <div id="prompt-professional" class="text-center hidden">
+            <h2>What is your profession?</h2>
+            <div class="d-grid gap-3 col-md-8 mx-auto mt-4">
+                <button class="btn btn-lg btn-primary category-btn" data-category="engineer">Engineer</button>
+                <button class="btn btn-lg btn-success category-btn" data-category="doctor">Doctor</button>
+                <button class="btn btn-lg btn-info category-btn" data-category="lawyer">Lawyer</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="quiz-screen" class="hidden">
+      <div class="quiz-info">
+        <div id="question-counter"></div>
+        <div id="score">Correct: 0</div>
+        <div id="timer">10</div>
+      </div>
+      <div class="progress">
+        <div
+          id="progress-bar"
+          class="progress-bar"
+          role="progressbar"
+          style="width: 0%"
+          aria-valuenow="0"
+          aria-valuemin="0"
+          aria-valuemax="100"
+        ></div>
+      </div>
+      <div id="question-text" class="text-center"></div>
+      <div id="options-grid" class="options-grid"></div>
+    </div>
+
+    <div id="results-screen" class="hidden text-center">
+      <h2 id="result-heading">Quiz Complete!</h2>
+      <p id="result-status-icon" class="result-icon"></p>
+      <p class="result-message">Your final score is:</p>
+      <p id="final-score" class="final-score-display"></p>
+      <p id="points-earned" class="points-display"></p>
+      <button class="btn btn-primary btn-lg mt-3" id="play-again-btn">
+        Play Again
+      </button>
+    </div>
+  </div>
+</div>
