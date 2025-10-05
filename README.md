@@ -2,7 +2,7 @@
 
 A dynamic, single-page web application that offers a fun, gamified quiz experience. Built with pure **HTML, CSS, and JavaScript**, this app features a complete user authentication system and an interactive prompt-based engine to generate personalized quizzes for students, exam aspirants, and working professionals.
 
-**Live Demo:** [Link to your live site] ---
+**Live Demo:** [QuizQuest - A Gamified Quiz Experience](https://saina25.github.io/QuizQuest/)
 
 ## ✨ Features
 
